@@ -1,0 +1,93 @@
+{
+	"items": [
+		{
+			"id": "hatsune-miku-colorful-stage",
+			"featured_id": 1,
+			"featured_game": "Hatsune Miku: Colorful Stage",
+			"featured_image_link": "https://maruchansquigle.vercel.app/covers/miku.png",
+			"featured_details": [
+				{
+					"featured_detail_id": 1,
+					"featured_detail_header": "Top 200",
+					"featured_detail_content": "This Way That Way Zookeeper Day"
+				},
+				{
+					"featured_detail_id": 2,
+					"featured_detail_header": "Top 300",
+					"featured_detail_content": "Friendship Rebuilt"
+				},
+				{
+					"featured_detail_id": 3,
+					"featured_detail_header": "Top 400",
+					"featured_detail_content": "Beyond the Dream of That Day"
+				},
+				{
+					"featured_detail_id": 4,
+					"featured_detail_header": "Top 500",
+					"featured_detail_content": "To One Day Reach That Flowery Stage"
+				}
+			]
+		},
+		{
+			"id": "stella-sora",
+			"featured_id": 2,
+			"featured_game": "Stella Sora",
+			"featured_image_link": "https://maruchansquigle.vercel.app/covers/stellasora.png",
+			"featured_details": [
+				{
+					"featured_detail_id": 1,
+					"featured_detail_header": null,
+					"featured_detail_content": "Chitose"
+				},
+				{
+					"featured_detail_id": 2,
+					"featured_detail_header": null,
+					"featured_detail_content": "Freesia"
+				},
+				{
+					"featured_detail_id": 3,
+					"featured_detail_header": null,
+					"featured_detail_content": "Nazuna"
+				},
+				{
+					"featured_detail_id": 4,
+					"featured_detail_header": null,
+					"featured_detail_content": "Gerie"
+				},
+				{
+					"featured_detail_id": 5,
+					"featured_detail_header": null,
+					"featured_detail_content": "Mistique"
+				}
+			]
+		},
+		{
+			"id": "100-orange-juice",
+			"featured_id": 3,
+			"featured_game": "100% Orange Juice",
+			"featured_image_link": "https://maruchansquigle.vercel.app/covers/orangejuice.png",
+			"featured_details": [
+				{
+					"featured_detail_id": 1,
+					"featured_detail_header": null,
+					"featured_detail_content": "Syura"
+				},
+				{
+					"featured_detail_id": 2,
+					"featured_detail_header": null,
+					"featured_detail_content": "Cook"
+				},
+				{
+					"featured_detail_id": 3,
+					"featured_detail_header": null,
+					"featured_detail_content": "Cuties"
+				},
+				{
+					"featured_detail_id": 4,
+					"featured_detail_header": null,
+					"featured_detail_content": "Chris"
+				}
+			]
+		}
+	]
+}
