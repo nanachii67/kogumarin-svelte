@@ -1,0 +1,32 @@
+{
+	"items": [
+		{
+			"playlist_id": 1,
+			"playlist_index": "#0001",
+			"playlist_name": "Western Slow Pop",
+			"playlist_image_link": "https://is1-ssl.mzstatic.com/image/thumb/SG-MQ-US-001-Image000001/v4/eb/33/c4/eb33c496-ca58-63fb-bd52-1fc917bea140/image/2400x2400bb.jpg",
+			"playlist_am_link": "https://music.apple.com/ph/playlist/0001-western-slow-pop/pl.u-PDb44aEIe8yoXll"
+		},
+		{
+			"playlist_id": 2,
+			"playlist_index": "#0002",
+			"playlist_name": "Brainrot",
+			"playlist_image_link": "https://is1-ssl.mzstatic.com/image/thumb/SG-MQ-US-001-Image000001/v4/3f/c4/39/3fc4390d-75be-a171-5ff0-3af5db65dfa7/image/2400x2400bb.jpg",
+			"playlist_am_link": "https://music.apple.com/ph/playlist/0002-brainrot/pl.u-AkAmmG3sxPlVa11"
+		},
+		{
+			"playlist_id": 3,
+			"playlist_index": "#0003",
+			"playlist_name": "Western Pop Rock",
+			"playlist_image_link": "https://is1-ssl.mzstatic.com/image/thumb/SG-MQ-US-001-Image000001/v4/e9/a8/5c/e9a85cf2-fec0-9a0a-81e6-9e0b39c38fed/image/2400x2400bb.jpg",
+			"playlist_am_link": "https://music.apple.com/ph/playlist/0003-western-pop-rock/pl.u-6mo41ALF8JKEpyy"
+		},
+		{
+			"playlist_id": 4,
+			"playlist_index": "#0004",
+			"playlist_name": "Vocaloid",
+			"playlist_image_link": "https://is1-ssl.mzstatic.com/image/thumb/SG-MQ-US-001-Image000001/v4/ff/98/50/ff98509e-23a7-cc49-dc5e-7312affd6d66/image/2400x2400bb.jpg",
+			"playlist_am_link": "https://music.apple.com/ph/playlist/0004-vocaloid/pl.u-RRbVVyxtmKeoW55"
+		}
+	]
+}

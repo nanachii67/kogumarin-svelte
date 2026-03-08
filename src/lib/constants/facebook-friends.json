@@ -1,0 +1,46 @@
+{
+	"items": [
+		{
+			"id": "dan-reyver",
+			"featured_id": 1,
+			"featured_name": "Dan Reyver",
+			"featured_friend_link": "https://www.facebook.com/danreyver.t.berroya"
+		},
+		{
+			"id": "kana-arima",
+			"featured_id": 2,
+			"featured_name": "Kana Arima",
+			"featured_friend_link": "https://www.facebook.com/xdillfrescott"
+		},
+		{
+			"id": "marc-mina",
+			"featured_id": 3,
+			"featured_name": "Marc Mina",
+			"featured_friend_link": "https://www.facebook.com/marcnor.mark"
+		},
+		{
+			"id": "nanachii67",
+			"featured_id": 4,
+			"featured_name": "Nana Hiiragi",
+			"featured_friend_link": "https://www.facebook.com/nanachii67"
+		},
+		{
+			"id": "mizuki-nightcord",
+			"featured_id": 5,
+			"featured_name": "Ren Mochizuki",
+			"featured_friend_link": "https://www.facebook.com/mizuki.nightcord"
+		},
+		{
+			"id": "shidonats",
+			"featured_id": 6,
+			"featured_name": "Shido Natsuken",
+			"featured_friend_link": "https://www.facebook.com/shidonats"
+		},
+		{
+			"id": "sopipa09",
+			"featured_id": 7,
+			"featured_name": "Sopipa WalangpangnagagawaDrawing GagawanangngTaxesnya",
+			"featured_friend_link": "https://www.facebook.com/Sopipa09"
+		}
+	]
+}

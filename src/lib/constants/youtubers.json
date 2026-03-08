@@ -1,0 +1,61 @@
+{
+	"items": [
+		{
+			"id": "steven-he",
+			"featured_id": 1,
+			"featured_name": "Steven He",
+			"featured_description": "Comedy skits about Asian parents and emotional damage.",
+			"featured_links": [
+				{
+					"featured_link_id": 1,
+					"featured_link_social": "YouTube",
+					"featured_handler_link": "https://www.youtube.com/@StevenHe"
+				}
+			]
+		},
+		{
+			"id": "ryan-george",
+			"featured_id": 2,
+			"featured_name": "Ryan George",
+			"featured_description": "Comedy sketches best known for Pitch Meetings.",
+			"featured_links": [
+				{
+					"featured_link_id": 1,
+					"featured_link_social": "YouTube",
+					"featured_handler_link": "https://www.youtube.com/@RyanGeorge"
+				}
+			]
+		},
+		{
+			"id": "rachie",
+			"featured_id": 3,
+			"featured_name": "Rachie",
+			"featured_description": "Anime and game song covers with soft, emotional vocals.",
+			"featured_links": [
+				{
+					"featured_link_id": 1,
+					"featured_link_social": "YouTube",
+					"featured_handler_link": "https://www.youtube.com/@rachie"
+				},
+				{
+					"featured_link_id": 2,
+					"featured_link_social": "Twitch",
+					"featured_handler_link": "https://www.twitch.tv/rachie"
+				}
+			]
+		},
+		{
+			"id": "maven-huffman",
+			"featured_id": 4,
+			"featured_name": "Maven Huffman",
+			"featured_description": "Former WWE wrestler sharing honest stories and commentary.",
+			"featured_links": [
+				{
+					"featured_link_id": 1,
+					"featured_link_social": "YouTube",
+					"featured_handler_link": "https://www.youtube.com/@MavenKHuffman"
+				}
+			]
+		}
+	]
+}

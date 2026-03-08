@@ -89,5 +89,10 @@
 	},
 	"keywords": [
 		"svelte"
-	]
+	],
+	"dependencies": {
+		"@ktibow/iconset-material-symbols": "^0.0.1764827375",
+		"m3-svelte": "^7.1.1",
+		"vite-plugin-functions-mixins": "^0.4.1"
+	}
 }

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { CSSProperties } from 'svelte/elements';
 	import { onMount, type Snippet } from 'svelte';
 
 	type Position = 'top' | 'bottom' | 'left' | 'right';
@@ -40,7 +39,6 @@
 		tabletWidth?: string;
 		desktopWidth?: string;
 		preset?: Preset;
-		gpuOptimized?: boolean;
 		hoverIntensity?: number;
 		target?: 'parent' | 'page';
 		onAnimationComplete?: () => void;
@@ -164,7 +162,13 @@
 	// ─── Intersection Observer (animated='scroll') ───────────────────────────────
 
 	let containerEl = $state<HTMLDivElement | null>(null);
-	let isVisible = $state(config.animated !== 'scroll');
+	let isVisible = $state(false);
+
+	$effect(() => {
+		if (config.animated !== 'scroll') {
+			isVisible = true;
+		}
+	});
 
 	$effect(() => {
 		if (config.animated !== 'scroll' || !containerEl) return;
@@ -287,8 +291,6 @@
 		? 'gradual-blur-page'
 		: 'gradual-blur-parent'} {className}"
 	style={containerStyle}
-	onmouseenter={config.hoverIntensity ? () => (isHovered = true) : undefined}
-	onmouseleave={config.hoverIntensity ? () => (isHovered = false) : undefined}
 >
 	<div class="relative h-full w-full rounded-xl">
 		{#each blurDivs as div (div.key)}

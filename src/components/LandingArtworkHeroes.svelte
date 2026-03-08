@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Separator from '$lib/components/ui/separator/separator.svelte';
+	// import Separator from '$lib/components/ui/separator/separator.svelte';
 	import GradualBlur from './GradualBlur.svelte';
 	import { useImageBrightness } from './hooks/useImageBrightness.ts';
 	import featuredData from '$lib/constants/featured-items.json' with { type: 'json' };
@@ -9,16 +9,16 @@
 	let imgEl = $state<HTMLImageElement | null>(null);
 	const analysis = useImageBrightness(() => imgEl);
 
-	const overlayHeight = $derived($analysis?.brightness === 'light' ? '10rem' : '10rem');
+	const overlayHeight = $derived($analysis?.brightness === 'light' ? '15rem' : '15rem');
 
-	const textColor = $derived(
-		$analysis?.brightness === 'light' ? 'text-neutral-800' : 'text-neutral-500'
-	);
+	// const textColor = $derived(
+	// 	$analysis?.brightness === 'light' ? 'text-neutral-800' : 'text-neutral-500'
+	// );
 
 	const overlayBackground = $derived(
 		$analysis
 			? `linear-gradient(to top, ${$analysis.dominantColorDark} 0%, transparent 100%)`
-			: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)'
+			: 'linear-gradient(to top, rgba(0,0,0,1), transparent)'
 	);
 
 	const overlayOpacity = $derived($analysis?.brightness === 'light' ? 0.6 : 0.5);
@@ -32,7 +32,6 @@
 				alt={featuredItem.featured_game}
 				src={featuredItem.featured_image_link}
 				bind:this={imgEl}
-				class="w-full"
 				crossorigin="anonymous"
 			/>
 			<GradualBlur
@@ -58,9 +57,11 @@
 			></div>
 			<div class="absolute right-0 bottom-10 left-0 z-20 mix-blend-plus-lighter">
 				<div class="mx-10 flex flex-col text-center">
-					<div class={textColor}>
-						<h3 class="">Featured Game</h3>
-						<h2 class="text-4xl leading-9 font-semibold">{featuredItem.featured_game}</h2>
+					<div>
+						<h3 class="text-neutral-500">Featured Game</h3>
+						<h2 class="text-3xl leading-7 font-semibold text-neutral-400 md:text-4xl md:leading-9">
+							{featuredItem.featured_game}
+						</h2>
 					</div>
 
 					<!-- <Separator class="my-2 opacity-50 mix-blend-plus-lighter" />

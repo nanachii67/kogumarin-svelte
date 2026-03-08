@@ -9,8 +9,15 @@
 
 <Sidebar.Provider>
 	<AppSidebar />
-	<main class="max-w-9xl mx-auto flex flex-col p-10 select-none">
-		{@render children()}
+
+	<main class="mx-auto max-w-7xl">
+		<div class="not-sr-only p-2 md:sr-only">
+			<Sidebar.Trigger />
+		</div>
+
+		<section class="flex flex-col p-10 select-none">
+			{@render children()}
+		</section>
 	</main>
 </Sidebar.Provider>
 
