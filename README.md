@@ -1,20 +1,12 @@
-# Svelte library
+# Koguma's Playground (Maru)
 
-Everything you need to build a Svelte library, powered by [`sv`](https://npmjs.com/package/sv).
+This is a front-end playground using [Maru's website](https://maruchansquigle.vercel.app/home).
 
-Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
+<!--Everything you need to build a Svelte library, powered by [`sv`](https://npmjs.com/package/sv).
+
+Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).-->
 
 ## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
 
 To recreate this project with the same configuration:
 
@@ -23,7 +15,7 @@ To recreate this project with the same configuration:
 pnpm dlx sv@0.12.4 create --template library --types ts --add prettier eslint tailwindcss="plugins:typography,forms" sveltekit-adapter="adapter:auto" devtools-json mdsvex storybook mcp="ide:other+setup:local" vitest="usages:unit,component" playwright --install pnpm kogumarin-svelte
 ```
 
-## Developing
+<!--## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
@@ -34,8 +26,9 @@ npm run dev
 npm run dev -- --open
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.-->
 
+<!--
 ## Building
 
 To build your library:
@@ -62,4 +55,4 @@ To publish your library to [npm](https://www.npmjs.com):
 
 ```sh
 npm publish
-```
+```-->
