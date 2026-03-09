@@ -25,15 +25,17 @@
 	const overlayBlend = $derived($analysis?.brightness === 'light' ? 'screen' : 'multiply');
 </script>
 
-<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 	{#each playlistItems as playlist (playlist.playlist_id)}
 		<div class="relative overflow-hidden rounded-xl">
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 			<a href={playlist.playlist_am_link}>
 				<img
 					alt={playlist.playlist_name}
 					src={playlist.playlist_image_link}
 					bind:this={imgEl}
 					crossorigin="anonymous"
+					class="w-90"
 				/>
 				<GradualBlur
 					target="parent"

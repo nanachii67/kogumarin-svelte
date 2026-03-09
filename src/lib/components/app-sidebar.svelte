@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
+	import NavUser from './nav-user.svelte';
 
 	import HouseIcon from '@lucide/svelte/icons/house';
 	import StarIcon from '@lucide/svelte/icons/star';
@@ -19,7 +20,11 @@
 	];
 </script>
 
-<Sidebar.Root>
+<Sidebar.Root collapsible="icon">
+	<Sidebar.Header>
+		<NavUser />
+	</Sidebar.Header>
+
 	<Sidebar.Content>
 		<Sidebar.Group>
 			<Sidebar.GroupLabel>
@@ -28,11 +33,14 @@
 					<p>Jm Demisana</p>
 				</div>
 			</Sidebar.GroupLabel>
+		</Sidebar.Group>
+
+		<Sidebar.Group>
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
 					{#each items as item (item.title)}
 						<Sidebar.MenuItem>
-							<Sidebar.MenuButton>
+							<Sidebar.MenuButton tooltipContent={item.title}>
 								{#snippet child({ props })}
 									<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 									<a href={item.url} {...props}>
@@ -53,7 +61,7 @@
 				<Sidebar.Menu>
 					{#each integration as item (item.title)}
 						<Sidebar.MenuItem>
-							<Sidebar.MenuButton>
+							<Sidebar.MenuButton tooltipContent={item.title}>
 								{#snippet child({ props })}
 									<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 									<a href={item.url} {...props}>

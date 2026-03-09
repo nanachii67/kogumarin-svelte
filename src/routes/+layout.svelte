@@ -3,30 +3,38 @@
 
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import AppSidebar from '$lib/components/app-sidebar.svelte';
+	import AppSidebarHeader from '$lib/components/app-sidebar-header.svelte';
 
-	const { children } = $props();
+	interface Props {
+		children: import('svelte').Snippet;
+		variant?: 'header' | 'sidebar';
+	}
+
+	// eslint-disable-next-line svelte/valid-prop-names-in-kit-pages
+	let { children, variant = 'sidebar' }: Props = $props();
+
+	let open: boolean = $state(
+		typeof window !== 'undefined' ? localStorage.getItem('sidebar:state') === 'true' : false
+	);
+
+	$effect(() => {
+		localStorage.setItem('sidebar:state', open.toString());
+	});
 </script>
 
-<Sidebar.Provider>
-	<AppSidebar />
+{#if variant === 'header'}
+	<div class="flex min-h-screen w-full flex-col">
+		{@render children()}
+	</div>
+{:else}
+	<Sidebar.Provider {open} onOpenChange={(v) => (open = v)}>
+		<AppSidebar />
 
-	<main class="mx-auto max-w-7xl">
-		<div class="not-sr-only p-2 md:sr-only">
-			<Sidebar.Trigger />
-		</div>
-
-		<section class="flex flex-col p-10 select-none">
-			{@render children()}
-		</section>
-	</main>
-</Sidebar.Provider>
-
-<style lang="scss">
-	/* .default-page-container {
-		display: flex;
-		flex-direction: column;
-		max-width: 72rem;
-		margin-inline: auto;
-		padding-inline: 1rem;
-	} */
-</style>
+		<main class="">
+			<AppSidebarHeader />
+			<main class="mx-auto flex max-w-7xl flex-col px-5 select-none md:px-10 md:py-10">
+				{@render children()}
+			</main>
+		</main>
+	</Sidebar.Provider>
+{/if}

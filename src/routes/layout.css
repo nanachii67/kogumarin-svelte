@@ -82,8 +82,8 @@
 	}
 	body {
 		@apply bg-background text-foreground;
-		/*font-family: 'Google Sans Flex', sans-serif;
+		font-family: 'Google Sans Flex', sans-serif;
 		font-optical-sizing: auto;
-		font-variation-settings: 'ROND' 25;*/
+		font-variation-settings: 'ROND' 25;
 	}
 }

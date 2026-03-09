@@ -33,6 +33,7 @@
 				src={featuredItem.featured_image_link}
 				bind:this={imgEl}
 				crossorigin="anonymous"
+				class="w-90"
 			/>
 			<GradualBlur
 				target="parent"
